@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>spimle-jwt</artifactId>
+	<artifactId>jwt-symetric</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spimle-jwt</name>
-	<description>Simple Jwt</description>
+	<name>jwt-symetric</name>
+	<description>Jwt authentication using symmetric key </description>
 	<url/>
 	<licenses>
 		<license/>
@@ -32,6 +32,10 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
@@ -40,16 +44,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>io.jsonwebtoken</groupId>
-			<artifactId>jjwt</artifactId>
-			<version>0.9.1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
-
 	</dependencies>
 
 	<build>
